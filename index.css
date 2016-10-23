@@ -1,0 +1,601 @@
+@charset "UTF-8";
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module fade
+ * @description 定义从左侧淡入动画
+ * @method fade-in-left
+ */
+@-webkit-keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+.ani.fade-in-left {
+  -webkit-animation-name: fade-in-left;
+  animation-name: fade-in-left; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module elastic
+ * @description 定义弹性下落动画
+ * @method elastic-in-down
+ * @demo http://ued.qunar.com/mobile/yo/demo/animate/ani-text.html
+ * @example <div class="ani elastic-in-down">该元素将会被应用elastic-in-down动画</div>
+ */
+@-webkit-keyframes elastic-in-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes elastic-in-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+.ani.elastic-in-down {
+  -webkit-animation-name: elastic-in-down;
+  animation-name: elastic-in-down; }
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 100px; } }
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 38.33333px; } }
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 38.14815px; } }
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 35.18519px; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 34.72222px; } }
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 33.33333px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 29.62963px; } }
+
+@font-face {
+  font-family: 'icon-font';
+  src: url("iconfont.woff"); }
+
+.icon-font {
+  font-family: 'icon-font' !important; }
+
+@font-face {
+  font-family: 'icon-Font';
+  src: url("iconfont2.woff"); }
+
+.icon-Font {
+  font-family: 'icon-Font' !important; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont1.woff"); }
+
+.iconfont {
+  font-family: 'iconfont' !important; }
+
+.icon-shanchu:before {
+  content: "\e60f"; }
+
+.icon-duihao:before {
+  content: "\e623"; }
+
+.icon-xinxi:before {
+  content: "\e630"; }
+
+.icon-comiiscaidan:before {
+  content: "\e603"; }
+
+.icon-fanhui-copy:before {
+  content: "\e600"; }
+
+.icon-tianjia:before {
+  content: "\e622"; }
+
+.icon-xuanzhong:before {
+  content: "\e739"; }
+
+.icon-yuyin:before {
+  content: "\e627"; }
+
+.icon-more1170511easyiconnet:before {
+  content: "\e60e"; }
+
+.icon-zhizhang5:before {
+  content: "\e64f"; }
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.header {
+  height: 1.32rem; }
+  .header .headerinner {
+    height: 0.56rem;
+    padding: 0.38rem 0.46rem;
+    position: relative; }
+    .header .headerinner .headerleft {
+      width: 0.97rem;
+      height: 0.56rem;
+      border-right: 1px solid #bcbccc;
+      color: #bcbccc;
+      font-size: 0.5rem; }
+    .header .headerinner .headerright {
+      width: 0.52rem;
+      height: 0.56rem;
+      font-size: 0.52rem;
+      color: #bcbccc;
+      position: absolute;
+      top: 0.38rem;
+      right: 0.46rem; }
+    .header .headerinner .middle1 {
+      height: 0.56rem;
+      color: #000;
+      font-size: 0.37rem;
+      position: absolute;
+      top: 0.38rem;
+      left: 1.9rem;
+      line-height: 0.56rem;
+      font-family: '微软雅黑'; }
+    .header .headerinner .middle2 {
+      width: 0.3rem;
+      height: 0.56rem;
+      color: #bcbcbc;
+      font-size: 0.3rem;
+      position: absolute;
+      top: 0.38rem;
+      left: 2.88rem;
+      line-height: 0.56rem; }
+    .header .headerinner .middlebox {
+      width: 3.04rem;
+      height: 0.54rem;
+      position: absolute;
+      top: 0.38rem;
+      right: 1.5rem; }
+      .header .headerinner .middlebox .mleft {
+        width: 1.51rem;
+        height: 0.52rem;
+        border: 1px solid #bcbccc;
+        position: absolute;
+        background: #fff;
+        right: 1.51rem;
+        color: #bcbcbc;
+        font-size: 0.3rem;
+        line-height: 0.52rem;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      .header .headerinner .middlebox .mleft.mmr {
+        color: #000;
+        background: #bcbcbc; }
+      .header .headerinner .middlebox .mright.mmr {
+        color: #000;
+        background: #bcbcbc; }
+      .header .headerinner .middlebox .mright {
+        width: 1.51rem;
+        height: 0.52rem;
+        border: 1px solid #bcbccc;
+        position: absolute;
+        right: 0rem;
+        color: #bcbcbc;
+        font-size: 0.3rem;
+        line-height: 0.52rem;
+        text-align: center;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+
+.add {
+  height: 2.72rem;
+  background: url("p1.jpg") no-repeat center center;
+  background-size: cover; }
+  .add .addinner {
+    height: 1.24rem;
+    padding: 0.73rem 0.45rem; }
+    .add .addinner .addbox {
+      width: 100%;
+      height: 1.24rem;
+      background: #f8fdfe;
+      border-radius: 10px;
+      position: relative; }
+      .add .addinner .addbox .addleft {
+        width: 0.41rem;
+        height: 1.24rem;
+        color: #bcbcbc;
+        font-size: 0.41rem;
+        line-height: 1.24rem;
+        position: absolute;
+        left: 0.45rem; }
+      .add .addinner .addbox input {
+        width: 6rem;
+        height: 1.24rem;
+        background: transparent;
+        color: #bcbcbc;
+        font-size: 0.4rem;
+        line-height: 1.24rem;
+        position: absolute;
+        left: 1.25rem;
+        border: none;
+        outline: none; }
+
+.bottom {
+  height: 14.4rem;
+  background: #5c5c67;
+  position: relative; }
+  .bottom .bottomtop {
+    height: 0.73rem;
+    position: relative;
+    /*.shuzi2{
+      //width:0.34rem;
+      display:none;
+      height:100%;
+      color:#b3b3c3;
+      font-size:0.3rem;
+      position:absolute;
+      left:1.14rem;
+      line-height:0.73rem;
+      background:red;
+      span{
+        display:none;
+        position:absolute;
+        left:0.2rem;
+        top:0;
+
+      }
+    }*/ }
+    .bottom .bottomtop .btopbox {
+      height: 0.73rem;
+      position: absolute;
+      left: 0.47rem;
+      font-family: '微软雅黑';
+      font-size: 0.3rem;
+      color: #b3b3c3;
+      line-height: 0.73rem; }
+    .bottom .bottomtop .shuzi {
+      height: 100%;
+      color: #b3b3c3;
+      font-size: 0.3rem;
+      position: absolute;
+      left: 1.14rem;
+      line-height: 0.73rem; }
+      .bottom .bottomtop .shuzi .span1 {
+        display: block;
+        position: absolute;
+        left: 0.2rem;
+        top: 0; }
+      .bottom .bottomtop .shuzi .sb {
+        display: none;
+        width: 0.8rem;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: 2;
+        line-height: 0.73rem; }
+      .bottom .bottomtop .shuzi .span2 {
+        position: absolute;
+        left: 0.2rem;
+        top: 0;
+        color: #b3b3c3;
+        font-size: 0.3rem; }
+  .bottom .list {
+    height: auto;
+    border-radius: 10px;
+    border-bottom: 1px solid #bcbccc;
+    overflow: hidden; }
+    .bottom .list .listinner {
+      height: 2.27rem;
+      padding: 0.53rem 0.44rem;
+      background: #fff;
+      position: relative; }
+      .bottom .list .listinner .xinxi {
+        width: 1.19rem;
+        height: 1.19rem;
+        background: #7e86f5;
+        border-radius: 50%;
+        font-size: 0.52rem;
+        color: #fff;
+        line-height: 1.19rem;
+        text-align: center; }
+      .bottom .list .listinner .contant {
+        width: 7rem;
+        height: 1.19rem;
+        position: absolute;
+        top: 0.53rem;
+        left: 2.14rem;
+        color: #000;
+        font-size: 0.4rem;
+        line-height: 1.19rem; }
+      .bottom .list .listinner input {
+        display: none;
+        width: 7rem;
+        height: 1.19rem;
+        position: absolute;
+        top: 0.53rem;
+        left: 2.14rem;
+        z-index: 2;
+        border: 1px solid red; }
+      .bottom .list .listinner .dian {
+        width: 0.32rem;
+        height: 0.32rem;
+        color: #bcbccc;
+        font-size: 0.32rem;
+        position: absolute;
+        right: 0.56rem;
+        bottom: 0.56rem; }
+      .bottom .list .listinner .dui {
+        width: 0.5rem;
+        height: 0.5rem;
+        color: #18181a;
+        font-size: 0.5rem;
+        position: absolute;
+        top: 0.88rem;
+        right: 0.44rem; }
+  .bottom .mk {
+    width: 1.52rem;
+    height: 1.52rem;
+    border-radius: 50%;
+    background: #ef5565;
+    position: absolute;
+    right: 0.65rem;
+    top: 11rem;
+    color: #fff;
+    font-size: 0.68rem;
+    line-height: 1.52rem;
+    text-align: center; }
+  .bottom .duikuang {
+    width: 2.9rem;
+    height: 0.7rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 0.44rem;
+    line-height: 0.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s ease; }
+
+.feichu {
+  animation: feichu 0.8s ease both; }
+
+@keyframes feichu {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-100%, 0, 0); } }
+
+.list .listinner .xinxi.yanse {
+  background: #9715F5; }
+
+/*.fade-in-left{
+
+}*/
+.delbox {
+  display: none;
+  width: 100%;
+  height: 18.44rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  .delbox .imgbox {
+    width: 8.18rem;
+    height: 4.82rem;
+    background: url("3.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; }
+    .delbox .imgbox .shanchu {
+      width: 3.98rem;
+      height: 1.04rem;
+      position: absolute;
+      background: red;
+      top: 3.79rem;
+      left: 4.21rem;
+      border-bottom-right-radius: 5px;
+      color: #fff;
+      font-size: 0.42rem;
+      line-height: 1.04rem;
+      text-align: center;
+      background: #ee5665; }
+    .delbox .imgbox .guidang {
+      width: 4.21rem;
+      height: 1.04rem;
+      position: absolute;
+      background: blue;
+      top: 3.79rem;
+      background: #fff;
+      color: #000;
+      font-size: 0.42rem;
+      line-height: 1.04rem;
+      text-align: center;
+      border-bottom-left-radius: 5px; }
+  .delbox .imgbox2, .delbox .imgbox3 {
+    width: 8.18rem;
+    height: 4.82rem;
+    background: url("3.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; }
+    .delbox .imgbox2 .or, .delbox .imgbox3 .or {
+      width: 3.6rem;
+      height: 0.64rem;
+      position: absolute;
+      top: 1.92rem;
+      left: 0.5rem;
+      background: #fff;
+      color: #000;
+      font-family: '微软雅黑';
+      font-size: 0.54rem;
+      line-height: 0.54rem;
+      text-align: center; }
+    .delbox .imgbox2 .no, .delbox .imgbox3 .no {
+      width: 3.98rem;
+      height: 1.04rem;
+      position: absolute;
+      background: red;
+      top: 3.79rem;
+      left: 4.21rem;
+      border-bottom-right-radius: 5px;
+      color: #fff;
+      font-size: 0.42rem;
+      line-height: 1.04rem;
+      text-align: center;
+      background: #ee5665; }
+    .delbox .imgbox2 .yes, .delbox .imgbox3 .yes {
+      width: 4.21rem;
+      height: 1.04rem;
+      position: absolute;
+      top: 3.79rem;
+      background: #fff;
+      color: #000;
+      font-size: 0.42rem;
+      line-height: 1.04rem;
+      text-align: center;
+      border-bottom-left-radius: 5px; }
+
+.list1 {
+  display: none;
+  height: auto;
+  border-radius: 10px;
+  border-bottom: 1px solid #bcbccc;
+  overflow: hidden; }
+  .list1 .listinner {
+    height: 2.27rem;
+    padding: 0.53rem 0.44rem;
+    background: #fff;
+    position: relative; }
+    .list1 .listinner .xinxi {
+      width: 1.19rem;
+      height: 1.19rem;
+      background: #7e86f5;
+      border-radius: 50%;
+      font-size: 0.52rem;
+      color: #fff;
+      line-height: 1.19rem;
+      text-align: center; }
+    .list1 .listinner .contant {
+      width: 7rem;
+      height: 1.19rem;
+      position: absolute;
+      top: 0.53rem;
+      left: 2.14rem;
+      color: #bcbcbc;
+      font-size: 0.4rem;
+      line-height: 1.19rem; }
+    .list1 .listinner input {
+      display: none;
+      width: 7rem;
+      height: 1.19rem;
+      position: absolute;
+      top: 0.53rem;
+      left: 2.14rem;
+      z-index: 2;
+      border: 1px solid red; }
+    .list1 .listinner .dian {
+      width: 0.32rem;
+      height: 0.32rem;
+      color: #bcbccc;
+      font-size: 0.32rem;
+      position: absolute;
+      right: 0.56rem;
+      bottom: 0.56rem; }
+    .list1 .listinner .dui {
+      width: 0.5rem;
+      height: 0.5rem;
+      color: #18181a;
+      font-size: 0.5rem;
+      position: absolute;
+      top: 0.88rem;
+      right: 0.44rem; }
+    .list1 .listinner .done {
+      width: 60%;
+      height: 2px;
+      background: #bcbcbc;
+      position: absolute;
+      left: 2rem;
+      top: 1.1rem; }
